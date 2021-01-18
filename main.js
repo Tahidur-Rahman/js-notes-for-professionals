@@ -1,59 +1,24 @@
+// // Datatypes in JS
 
-// Tabulating Values
-  
-console.table(["Hello",'World'])
+// // Typeof
+// console.log(typeof {})
+// console.log(typeof [])
+// console.log(typeof null)
+// console.log(typeof /aa/gi)
+// console.log(typeof Error())
 
-console.table({Foo:'bar',bar:'baz'})
+console.log([] instanceof Object)
+console.log([] instanceof Array)
 
-let personArr = [
-    {"personId":123,
-     "name"    : 'john',
-     "city"   : "new york"},
-     
-    {"personId":223,
-    "name"    : 'sohn',
-    "city"   : "new york"},
-    
-    {"personId":323,
-     "name"    : 'mohn',
-     "city"   : "new york"},
-]
-// controlling the array info output
-console.table(personArr)
-console.table(personArr,['name','personId'])
-
-// 5.6 - Counting
- console.count(1)
- console.count(2)
- console.count(1)
- console.count(1)
- console.count('1')
- //  label:string
- console.count(Date)
- console.count(console)
- console.count(console.__proto__)
- console.count(console.constructor.prototype)
- console.count()
- console.count('')
- console.count('')
- console.count(' ')
- console.count('')
-
-// Clearing the console
-console.clear()
-
-// Display Objects and XML Interactively
-
-let Obj = {
-    name: 'tahid',
-    age : 22
-}
-console.log(Obj)
-console.dir(Obj)
-console.dirxml(document)
-console.dirxml(Obj)
-console.log(document)
-
-// Debugging with Assertion
-
-console.assert('one' === 1)
+// Getting Object type by Constructor name
+console.log(Object.prototype.toString.call("string"))
+console.log(Object.prototype.toString.call(3))
+console.log(Object.prototype.toString.call(true))
+console.log(Object.prototype.toString.call({}))
+console.log(Object.prototype.toString.call(()=>{}))
+console.log(Object.prototype.toString.call(new Date(2021,10,22)))
+console.log(Object.prototype.toString.call(/aa/gi))
+console.log(Object.prototype.toString.call([]))
+console.log(Object.prototype.toString.call(null))
+console.log(Object.prototype.toString.call(undefined))
+console.log(Object.prototype.toString.call(Error()))
