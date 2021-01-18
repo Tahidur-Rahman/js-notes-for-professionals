@@ -1,24 +1,44 @@
-// // Datatypes in JS
+// // Chapter : 7 : Strings
 
-// // Typeof
-// console.log(typeof {})
-// console.log(typeof [])
-// console.log(typeof null)
-// console.log(typeof /aa/gi)
-// console.log(typeof Error())
+//   // 7.1 : Basic info & String Concatenation
+//   console.log(typeof String(true))
+//   console.log(typeof (3).toString())
+  
+//   console.log(String.fromCharCode(104,101,108,108,111))
 
-console.log([] instanceof Object)
-console.log([] instanceof Array)
+//   //String Concatenation
 
-// Getting Object type by Constructor name
-console.log(Object.prototype.toString.call("string"))
-console.log(Object.prototype.toString.call(3))
-console.log(Object.prototype.toString.call(true))
-console.log(Object.prototype.toString.call({}))
-console.log(Object.prototype.toString.call(()=>{}))
-console.log(Object.prototype.toString.call(new Date(2021,10,22)))
-console.log(Object.prototype.toString.call(/aa/gi))
-console.log(Object.prototype.toString.call([]))
-console.log(Object.prototype.toString.call(null))
-console.log(Object.prototype.toString.call(undefined))
-console.log(Object.prototype.toString.call(Error()))
+//   console.log(('Hello').concat(' ','World',' ','!'))
+
+// //   String.raw - escape the escape sequence
+// console.log(String.raw`a\\\\b`)
+// console.log(`a\\\\b`)
+
+// // 7.2 : Reverse String
+
+// console.log('????. '.split('').reverse().join('') === ' .????')
+
+// // Using Spread operator
+ 
+// function reverseString(str){
+//     return [...String(str)].reverse().join('')
+// }
+
+// console.log(reverseString('HEllo'))
+// console.log(reverseString(2345))
+// console.log(reverseString([1,2,3]))
+
+// // Custom reverse FUnction
+
+// function reverse(str) {
+//     let strRev = '';
+//     for(let i = str.length; i>= 0 ;i--){
+//         strRev += str[i];
+//     }
+//     console.log(strRev);
+// }
+
+// reverse('reverse')
+
+// 7.3 : Comparing Strings LExicographically
+
