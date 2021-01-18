@@ -1,31 +1,26 @@
-// // 5.1 Measuring time - console.time()
+// // 5.3 Printing to browser debugging console
+// console.log(()=>{},[3])
 
-// console.time("response in")
-// alert('1')
-// console.timeEnd("response in")
-// alert('3')
-// console.timeEnd("response in")
+// console.log(new Date(0))
+// console.log(function test(a,b){return c;})
 
-// // 5.2 Formatting console output
+// console.info('info')
+// console.warn('warning')
+// console.error('error')
+// console.timeStamp('msg')
+// console.time('s')
 
-// // c- like console output
+// console.dir()
 
-// console.log("%s has %d points",'Sam',100) // Format specifier -- %s and %d
+// // 5.4 - Including a stack trace when logging console.trace()
 
-// // %o - expandable dom 
-// // %0 - expandable JS obj 
-// // %c  - css styling 
+// function foo(){
+//     console.trace('my log')
+// }
+// foo(
 
-// // Advanced Styling -- %c
+// )
 
-// console.log("%cHello World !",'color:blue;font-size:xx-large'); // xx-large blue text
+// var e = new error('foo');
+// console.log(e.stack)
 
-// // Mulitple styling
-
-// console.log("%cHello %cWorld %c!!",'color:blue',"font-size:40px",''); // 3 diff style
-
-// // Using groups to indent output
-  
-//   console.groupCollapsed(33,3)
-//   console.group(2,2,2)
-//   console.groupEnd()
