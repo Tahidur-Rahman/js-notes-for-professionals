@@ -1,26 +1,59 @@
-// // 5.3 Printing to browser debugging console
-// console.log(()=>{},[3])
 
-// console.log(new Date(0))
-// console.log(function test(a,b){return c;})
+// Tabulating Values
+  
+console.table(["Hello",'World'])
 
-// console.info('info')
-// console.warn('warning')
-// console.error('error')
-// console.timeStamp('msg')
-// console.time('s')
+console.table({Foo:'bar',bar:'baz'})
 
-// console.dir()
+let personArr = [
+    {"personId":123,
+     "name"    : 'john',
+     "city"   : "new york"},
+     
+    {"personId":223,
+    "name"    : 'sohn',
+    "city"   : "new york"},
+    
+    {"personId":323,
+     "name"    : 'mohn',
+     "city"   : "new york"},
+]
+// controlling the array info output
+console.table(personArr)
+console.table(personArr,['name','personId'])
 
-// // 5.4 - Including a stack trace when logging console.trace()
+// 5.6 - Counting
+ console.count(1)
+ console.count(2)
+ console.count(1)
+ console.count(1)
+ console.count('1')
+ //  label:string
+ console.count(Date)
+ console.count(console)
+ console.count(console.__proto__)
+ console.count(console.constructor.prototype)
+ console.count()
+ console.count('')
+ console.count('')
+ console.count(' ')
+ console.count('')
 
-// function foo(){
-//     console.trace('my log')
-// }
-// foo(
+// Clearing the console
+console.clear()
 
-// )
+// Display Objects and XML Interactively
 
-// var e = new error('foo');
-// console.log(e.stack)
+let Obj = {
+    name: 'tahid',
+    age : 22
+}
+console.log(Obj)
+console.dir(Obj)
+console.dirxml(document)
+console.dirxml(Obj)
+console.log(document)
 
+// Debugging with Assertion
+
+console.assert('one' === 1)
