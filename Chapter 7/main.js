@@ -76,3 +76,29 @@ console.log(typeof str) //object
 console.log(str instanceof String) //true
 console.log(str.substring(0,2))
 
+// SLice 
+console.log('dfsdf'.slice(0,3))
+console.log('😥'.charCodeAt(0))
+console.log('😥'.codePointAt())
+
+// String to number
+console.log((12).toString(16)) //c
+console.log(parseInt((12).toString(16),16)) //12
+  
+// String find and replace function
+console.log('sdfsd'.indexOf('f'))
+console.log('sdfsdff'.indexOf('f',6))
+console.log('sdfsdf'.lastIndexOf('f'))
+console.log('sdfsdf'.includes('f'))
+console.log('sdfsdf'.includes('0'))
+console.log('sdfsdf'.replace('d','ddd'))
+console.log('sdfsdf'.replaceAll('d','ddd')) 
+console.log('sdfsdf'.toUpperCase()) 
+console.log('SSfsdf'.toLowerCase()) 
+
+
+// repeating 
+console.log('dar'.repeat(3))
+console.log('dar'.repeat(0))
+console.log('dar'.repeat(1))
+console.log('dar'.repeat(-1))
