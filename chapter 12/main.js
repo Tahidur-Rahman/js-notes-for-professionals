@@ -159,3 +159,67 @@ arrr.push.apply(arrr,arrExt)
 console.table(arrr)
 
 console.clear()
+
+// Sadia Akter Saba
+// Ashraful Alam Shawon
+
+console.log([...'123456']) // spreading string into array
+
+function argFunc(a,b,c){
+  console.log(a,b,c)
+}
+
+let arrArg = [1,2,3,4]
+
+argFunc(arrArg)
+argFunc(...arrArg)
+
+console.log(strArray)
+// Searching 
+console.log(strArray.find(a=>a == 'Banana'))
+// findIndex
+console.log(strArray.findIndex(a=>a=="Apple"))
+
+// String to array
+console.log('stackoverflow'.split(''))
+console.log([...'stackoverflow'])
+// delete strArray[0]
+console.log(strArray)
+
+console.log(Math.max.apply(null,numArray))
+console.log(Math.min.apply(null,numArray))
+
+console.log(Math.max(...numArray))
+console.log(Math.min(...numArray))
+
+console.log(Array.of(1,2,3))
+let newArr = Array.from({length:4},(v,index)=>Math.pow(index,3))
+newArr.splice(newArr.length+1,0,1,2,3)
+console.log(newArr)
+console.log(newArr.entries())
+// console.clear()
+
+console.log(...[1,2,...[3,4]])
+let nestedArr = [1,2,[3,4,5,[6,'chomok']]];
+
+console.log(String(nestedArr).split(','))
+
+console.clear()
+
+// Object keys and values to array
+
+let obj1 = {
+  name:'tahid',
+  age :22,
+  home:'kolagoan'
+}
+let objToArr = []
+
+for(let each in obj1){
+  objToArr.push([each,obj1[each]])
+}
+console.table(objToArr)
+
+let arr11 = [['tahid',2],['tahid',11]]
+
+console.log(arr11.every((item,i,list)=>item == list[i]))
